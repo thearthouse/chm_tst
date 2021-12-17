@@ -1,5 +1,5 @@
 from selenium import webdriver
-import os
+import os,time
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
@@ -9,5 +9,10 @@ chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 # Now you can start using Selenium
-driver.get("https://www.youtube.com/watch?v=Ven-pqwk3ec")
+driver.get("https://infrasert.blogspot.com")
+print("ok gibi")
+time.sleep(10)
 print(driver.title)
+print("bekle gibi")
+time.sleep(5000)
+print("biti gibi")
