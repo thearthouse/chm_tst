@@ -10,4 +10,4 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 # Now you can start using Selenium
 driver.get("https://www.youtube.com/watch?v=Ven-pqwk3ec")
-print(driver.getTitle())
+print(driver.title)
